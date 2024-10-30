@@ -23,7 +23,6 @@
                 extend: {
                     colors: {
                         'primary-bg': '#ABEF5F',
-                        'primary-hover-bg': 'rgba(171, 239, 95, 0.50)',
                         'main-bg': '#F4F4F4',
                         'theme-text': '#212121',
                         'secondary-text': '#737373',
@@ -103,7 +102,7 @@
                     <!-- Nav button -->
                     <div class="hidden md:flex">
                         <a
-                            class="btn bg-primary-bg hover:bg-primary-hover-bg hover:border-primary-bg text-xl font-extrabold py-2 px-5 rounded-full ">Book
+                            class="btn bg-primary-bg hover:bg-primary-bg hover:bg-opacity-50 hover:border-primary-bg text-xl font-extrabold py-2 px-5 rounded-full ">Book
                             Consult
                             <div class="text-base bg-black p-2 rounded-full text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
@@ -162,7 +161,7 @@
                 sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space
                 with natural light.</p>
             <a
-                class="btn bg-primary-hover-bg hover:bg-primary-bg border-primary-bg text-xl font-bold py-2 px-5 rounded-full mt-2 w-full sm:w-auto">View
+                class="btn bg-primary-bg bg-opacity-50 hover:bg-primary-bg border-primary-bg text-xl font-bold py-2 px-5 rounded-full mt-2 w-full sm:w-auto">View
                 Details
                 <span class="text-base bg-primary-bg hover:bg-black p-2 rounded-full text-black hover:text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
@@ -232,7 +231,8 @@
                 </div>
             </div>
             <!-- About Counter Section -->
-            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center bg-white mt-24 mb-20 md:mb-0 p-8 rounded-3xl">
+            <section
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center bg-white mt-24 mb-20 md:mb-0 p-8 rounded-3xl">
                 <div class="text-center p-6"> <!-- Counter Card- 1 -->
                     <img class="inline-block mb-3" src="./assets/comment.svg" alt="">
                     <h4 class="text-3xl lg:text-4xl text-third-text font-extrabold">235+</h4>
@@ -256,7 +256,7 @@
             </section>
         </section>
         <!-- Our Work Process Section -->
-        <section class="px-3 md:px-8 lg:px-11">
+        <section class="py-24 px-3 md:px-8 lg:px-11">
             <!-- Work Section Text Container -->
             <div class="text-center space-y-6">
                 <a class="inline-flex gap-2 bg-white text-third-text text-base font-bold py-2 px-4 rounded-3xl">
@@ -267,33 +267,120 @@
                     </svg>
                     How we works</a>
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">Our Works Process</h2>
-                <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic
+                    charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- Work Grid Card Container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-center items-center mt-6">
                 <div class="p-6 rounded-2xl space-y-3 bg-[#E7C1D3]"> <!-- Work Card-1 -->
                     <img class="w-12" src="./assets/concept.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Concept</h5>
-                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic
+                        charm and modern.</p>
                 </div>
                 <div class="p-6 rounded-2xl space-y-3 bg-[#EFDA6E]"> <!-- Work Card-2 -->
                     <img class="w-12" src="./assets/flow-chart.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Design Process</h5>
-                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic
+                        charm and modern.</p>
                 </div>
                 <div class="p-6 rounded-2xl space-y-3 bg-[#A4DAC3]"> <!-- Work Card-3 -->
                     <img class="w-12" src="./assets/vision.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Supervision</h5>
-                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic
+                        charm and modern.</p>
                 </div>
                 <div class="p-6 rounded-2xl space-y-3 bg-[#77AAEA]"> <!-- Work Card-4 -->
                     <img class="w-12" src="./assets/budget-planning.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Budget Planning</h5>
-                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic
+                        charm and modern.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Our Latest Portfolio Section -->
+        <section class="bg-white py-24 px-3 md:px-8 lg:px-11">
+            <!-- Portfolio Section Text Container -->
+            <div class="text-center space-y-6 mb-8">
+                <a
+                    class="inline-flex gap-2 bg-primary-bg bg-opacity-20 text-third-text text-base font-bold py-2 px-4 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                    Explore our Latest works</a>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">Our Latest Portfolio</h2>
+                <p class="text-base text-third-text font-medium">The barn house captivates with its blend of rustic
+                    charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <!-- Portfolio Grid Card Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-6">
+                <!-- Portfolio Card- 1 -->
+                <div class="flex flex-col md:flex-row p-6 gap-6 border border-header-bg rounded-2xl md:col-span-2 lg:col-span-5">
+                    <!-- Card Image -->
+                    <img class="w-full object-cover rounded-2xl" src="./assets/img1.png" alt="">
+                    <!-- Card Text Contents -->
+                    <div>
+                        <h5 class="text-xl md:text-2xl text-third-text font-extrabold mb-4">Commercial</h5>
+                        <p class="text-base text-secondary-text font-medium mb-5">The barn house captivates with its
+                            blend of
+                            rustic charm and modern. The barn house captivates with its blend of rustic charm and modern
+                            .</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            View Details
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Portfolio Card- 2 -->
+                <div class="flex p-6 gap-6 border border-header-bg rounded-2xl lg:col-span-3">
+                    <img class="w-full object-cover rounded-2xl" src="./assets/img2.png" alt="">
+                </div>
+                <!-- Portfolio Card- 3 -->
+                <div class="flex p-6 gap-6 border border-header-bg rounded-2xl lg:col-span-2">
+                    <img class="w-full object-cover rounded-2xl" src="./assets/img3.png" alt="">
+                </div>
+                <!-- Portfolio Card- 4 -->
+                <div class="flex flex-col md:flex-row p-6 gap-6 border border-header-bg rounded-2xl md:col-span-2 lg:col-span-4">
+                    <!-- Card Image -->
+                    <img class="w-full object-cover rounded-2xl" src="./assets/img4.png" alt="">
+                    <!-- Card Text Contents -->
+                    <div>
+                        <h5 class="text-xl md:text-2xl text-third-text font-extrabold mb-4">Commercial</h5>
+                        <p class="text-base text-secondary-text font-medium mb-5">The barn house captivates with its
+                            blend of
+                            rustic charm and modern. The barn house captivates with its blend of rustic charm and modern
+                            .</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            View Details
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Portfolio Card- 5 -->
+                <div class="flex p-6 gap-6 border border-header-bg rounded-2xl lg:col-span-2">
+                    <img class="w-full object-cover rounded-2xl" src="./assets/img5.png" alt="">
+                </div>
+                <!-- Portfolio Card- 6 -->
+                <div class="flex lg:hidden p-6 gap-6 border border-header-bg rounded-2xl">
+                    <img class="w-full object-cover rounded-2xl" src="./assets/img3.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
