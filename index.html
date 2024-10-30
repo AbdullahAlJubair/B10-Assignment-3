@@ -24,9 +24,11 @@
                     colors: {
                         'primary-bg': '#ABEF5F',
                         'primary-hover-bg': 'rgba(171, 239, 95, 0.50)',
+                        'secondary-bg': '#F4F4F4',
                         'theme-text': '#212121',
                         'secondary-text': '#737373',
-                        'header-bg' : '#E9E9E9'
+                        'third-text': '#494949',
+                        'header-bg': '#E9E9E9'
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif'],
@@ -44,7 +46,7 @@
     <!-- Header Section -->
     <header class="container mx-auto bg-header-bg">
         <!-- NavBar -->
-        <nav>
+        <nav class="py-5 px-0 lg:px-10">
             <div class="navbar">
                 <!-- Logo -->
                 <div class="navbar-start">
@@ -81,7 +83,8 @@
                 <!-- Navbar Button Items -->
                 <div class="navbar-end flex items-center gap-4">
                     <!-- Search Icon -->
-                    <div class="bg-white text-secondary-text border border-secondary-text p-2 rounded-full cursor-pointer hidden md:block">
+                    <div
+                        class="bg-white text-secondary-text border border-header-bg p-2 rounded-full cursor-pointer hidden md:block">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -89,7 +92,8 @@
                         </svg>
                     </div>
                     <!-- Cart Icon -->
-                    <div class="bg-white text-secondary-text border border-secondary-text p-2 rounded-full cursor-pointer hidden md:block">
+                    <div
+                        class="bg-white text-secondary-text border border-header-bg p-2 rounded-full cursor-pointer hidden md:block">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -148,7 +152,8 @@
             </div>
         </nav>
         <!-- Banner Section -->
-        <section class="flex flex-col gap-6 items-center text-center p-4 md:p-8 lg:p-11 bg-banner-gradient">
+        <section
+            class="flex flex-col gap-6 items-center text-center p-3 md:p-8 lg:p-11 pb-10 md:pb-16 lg:pb-24 bg-banner-gradient">
             <img src="./assets/banner.png" alt="">
             <h1 class="text-2xl md:text-4xl lg:text-6xl font-extrabold text-theme-text">A barn house of this design has
                 a striking appearance</h1>
@@ -171,6 +176,81 @@
         </section>
     </header>
     <main class="container mx-auto">
+        <!-- About Us Section -->
+        <section class="bg-secondary-bg py-10 md:py-20 lg:py-24 px-3 md:px-8 lg:px-32 relative">
+            <img class="absolute top-10 left-20 hidden lg:block" src="./assets/Vector.png" alt="">
+            <!-- About Section Content -->
+            <div class="flex flex-col lg:flex-row items-center gap-9">
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <div class="text-center lg:text-left  space-y-6">
+                        <a class="inline-flex gap-2 bg-white text-third-text text-base font-bold py-2 px-4 rounded-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                            About Us</a>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">We design thoughtful,
+                            liveable spaces</h2>
+                        <p class="text-base text-third-text font-medium">The barn house captivates with its blend of
+                            rustic
+                            charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row lg:flex-col gap-6 items-center">
+                        <!-- About Card-1 -->
+                        <div class="flex items-start lg:items-center gap-6 p-6 bg-white rounded-2xl">
+                            <img class="w-10 lg:w-16" src="./assets/commercial.png" alt="">
+                            <div>
+                                <h5 class="text-base md:text-lg lg:text-xl text-third-text font-extrabold">Commercial
+                                </h5>
+                                <p class="text-base text-secondary-text font-medium">The barn house captivates with its
+                                    blend of
+                                    rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <!-- About Card-2 -->
+                        <div class="flex items-start lg:items-center gap-6 p-6 bg-white rounded-2xl">
+                            <img class="w-10 lg:w-16" src="./assets/residential.png" alt="">
+                            <div>
+                                <h5 class="text-base md:text-lg lg:text-xl text-third-text font-extrabold">Residential
+                                </h5>
+                                <p class="text-base text-secondary-text font-medium">The barn house captivates with its
+                                    blend of
+                                    rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- About Section Image -->
+                <div class="w-full lg:w-1/2 h-[223px] md:h-[385px] lg:h-auto self-stretch">
+                    <img class="w-full h-full object-cover rounded-2xl" src="./assets/Rectangle.png" alt="">
+                </div>
+            </div>
+            <!-- About Counter Section -->
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center bg-white my-24 p-8 rounded-3xl">
+                <div class="text-center p-6"> <!-- Counter Card- 1 -->
+                    <img class="inline-block mb-3" src="./assets/comment.svg" alt="">
+                    <h4 class="text-3xl lg:text-4xl text-third-text font-extrabold">235+</h4>
+                    <p class="text-base text-secondary-text font-medium">Happy Client Review</p>
+                </div>
+                <div class="text-center p-6"> <!-- Counter Card- 2 -->
+                    <img class="inline-block mb-3" src="./assets/departement.svg" alt="">
+                    <h4 class="text-3xl lg:text-4xl text-third-text font-extrabold">50+</h4>
+                    <p class="text-base text-secondary-text font-medium">Work Departments</p>
+                </div>
+                <div class="text-center p-6"> <!-- Counter Card- 3 -->
+                    <img class="inline-block mb-3" src="./assets/user-group.svg" alt="">
+                    <h4 class="text-3xl lg:text-4xl text-third-text font-extrabold">30k+</h4>
+                    <p class="text-base text-secondary-text font-medium">Our Happy Client</p>
+                </div>
+                <div class="text-center p-6"> <!-- Counter Card- 4 -->
+                    <img class="inline-block mb-3" src="./assets/user-multiple.svg" alt="">
+                    <h4 class="text-3xl lg:text-4xl text-third-text font-extrabold">307+</h4>
+                    <p class="text-base text-secondary-text font-medium">Staff Members</p>
+                </div>
+            </section>
+        </section>
 
     </main>
     <footer>
