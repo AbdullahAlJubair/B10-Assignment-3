@@ -24,10 +24,16 @@
                     colors: {
                         'primary-bg': '#ABEF5F',
                         'primary-hover-bg': 'rgba(171, 239, 95, 0.50)',
+                        'theme-text': '#212121',
+                        'secondary-text': '#737373',
+                        'header-bg' : '#E9E9E9'
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif'],
-                    }
+                    },
+                    backgroundImage: {
+                        'banner-gradient': 'linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0) 100%)',
+                    },
                 }
             }
         }
@@ -36,13 +42,14 @@
 
 <body class="font-manrope">
     <!-- Header Section -->
-    <header class="container mx-auto">
+    <header class="container mx-auto bg-header-bg">
         <!-- NavBar -->
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar">
                 <!-- Logo -->
                 <div class="navbar-start">
-                    <a class=" flex items-center gap-2 text-2xl lg:text-3xl font-extrabold cursor-pointer">
+                    <a
+                        class=" flex items-center gap-2 text-2xl lg:text-3xl text-theme-text font-extrabold cursor-pointer">
                         <!-- Logo Icon -->
                         <div class="text-base bg-primary-bg p-2 rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -74,7 +81,7 @@
                 <!-- Navbar Button Items -->
                 <div class="navbar-end flex items-center gap-4">
                     <!-- Search Icon -->
-                    <div class="bg-black text-white p-2 rounded-full cursor-pointer hidden md:block">
+                    <div class="bg-white text-secondary-text border border-secondary-text p-2 rounded-full cursor-pointer hidden md:block">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -82,7 +89,7 @@
                         </svg>
                     </div>
                     <!-- Cart Icon -->
-                    <div class="bg-black text-white p-2 rounded-full cursor-pointer hidden md:block">
+                    <div class="bg-white text-secondary-text border border-secondary-text p-2 rounded-full cursor-pointer hidden md:block">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -107,8 +114,10 @@
                     <div class="dropdown">
                         <!-- Hamburger Icon -->
                         <div tabindex="0" role="button" class="btn bg-white px-3 rounded-full lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         </div>
                         <!-- Mobile Nav -->
@@ -138,9 +147,35 @@
                 </div>
             </div>
         </nav>
+        <!-- Banner Section -->
+        <section class="flex flex-col gap-6 items-center text-center p-4 md:p-8 lg:p-11 bg-banner-gradient">
+            <img src="./assets/banner.png" alt="">
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-extrabold text-theme-text">A barn house of this design has
+                a striking appearance</h1>
+            <p class="text-base font-medium max-w-screen-lg">The barn house captivates with its blend of rustic charm
+                and modern
+                sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space
+                with natural light.</p>
+            <a
+                class="btn bg-primary-hover-bg hover:bg-primary-bg border-primary-bg text-xl font-bold py-2 px-5 rounded-full mt-2 w-full sm:w-auto">View
+                Details
+                <span class="text-base bg-primary-bg hover:bg-black p-2 rounded-full text-black hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                        stroke="currentColor" class="size-3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </span>
+            </a>
+
+        </section>
     </header>
-    <main class="container mx-auto"></main>
-    <footer></footer>
+    <main class="container mx-auto">
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 
