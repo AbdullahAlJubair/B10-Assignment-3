@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
     <title>Rinterio</title>
     <!-- Tailwind and daisyUi CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -66,17 +67,18 @@
                 <!-- Main Navigation -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base font-normal">
-                        <li><a class=" text-[#494949] font-bold hover:bg-transparent">Home</a></li>
-                        <li><a
+                        <li><a href="#home" class=" text-[#494949] font-bold hover:bg-transparent">Home</a></li>
+                        <li><a href="#services"
                                 class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Services</a>
                         </li>
-                        <li><a
+                        <li><a href="#portfolio"
                                 class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Portfolio</a>
                         </li>
-                        <li><a
+                        <li><a href="#blog"
                                 class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Blogs</a>
                         </li>
-                        <li><a class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Contact
+                        <li><a href="#contact"
+                                class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Contact
                                 Us</a></li>
                     </ul>
                 </div>
@@ -128,22 +130,23 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-normal right-0">
                             <li>
-                                <a class=" text-[#494949] font-bold hover:bg-transparent">Home</a>
+                                <a href="#home" class=" text-[#494949] font-bold hover:bg-transparent">Home</a>
                             </li>
                             <li>
-                                <a
+                                <a href="#services"
                                     class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Services</a>
                             </li>
                             <li>
-                                <a
+                                <a href="#portfolio"
                                     class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Portfolio</a>
                             </li>
                             <li>
-                                <a
+                                <a href="#blog"
                                     class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Blogs</a>
                             </li>
                             <li>
-                                <a class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Contact
+                                <a href="#contact"
+                                    class=" text-[#737373] hover:text-[#494949] hover:font-bold hover:bg-transparent">Contact
                                     Us</a>
                             </li>
                         </ul>
@@ -152,11 +155,14 @@
             </div>
         </nav>
         <!-- Banner Section -->
-        <section
+        <section id="home"
             class="flex flex-col gap-6 items-center text-center p-3 md:p-8 lg:p-11 pb-10 md:pb-16 lg:pb-24 bg-banner-gradient">
             <img src="./assets/banner.png" alt="">
-            <h1 class="text-2xl md:text-4xl lg:text-6xl font-extrabold text-theme-text max-w-screen-lg">A Blend of Tradition and Modernity in Barn House Design</h1>
-            <p class="text-base font-medium max-w-[970px] mx-auto">Our barn house design merges traditional textures with a modern edge, featuring reclaimed wood, minimalist accents, and vast windows. Enjoy a home that feels naturally bright, open, and timelessly inviting.</p>
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-extrabold text-theme-text max-w-screen-lg">A Blend of
+                Tradition and Modernity in Barn House Design</h1>
+            <p class="text-base font-medium max-w-[970px] mx-auto">Our barn house design merges traditional textures
+                with a modern edge, featuring reclaimed wood, minimalist accents, and vast windows. Enjoy a home that
+                feels naturally bright, open, and timelessly inviting.</p>
             <a
                 class="btn bg-primary-bg bg-opacity-50 hover:bg-primary-bg border-primary-bg text-xl font-bold py-2 px-5 rounded-full mt-2 w-full sm:w-auto">View
                 Details
@@ -190,8 +196,11 @@
                                     d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>
                             About Us</a>
-                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">We design thoughtful, liveable spaces</h2>
-                        <p class="text-base text-third-text font-medium">Focused on creating spaces that balance style and functionality, we design environments where aesthetics meet practical, everyday living.</p>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">We design thoughtful,
+                            liveable spaces</h2>
+                        <p class="text-base text-third-text font-medium">Focused on creating spaces that balance style
+                            and functionality, we design environments where aesthetics meet practical, everyday living.
+                        </p>
                     </div>
                     <!-- About Grid Card -->
                     <div class="flex flex-col md:flex-row lg:flex-col gap-6 items-center">
@@ -201,7 +210,8 @@
                             <div>
                                 <h5 class="text-base md:text-lg lg:text-xl text-third-text font-extrabold">Commercial
                                 </h5>
-                                <p class="text-base text-secondary-text font-medium">Innovative commercial designs that inspire productivity and leave an impact.</p>
+                                <p class="text-base text-secondary-text font-medium">Innovative commercial designs that
+                                    inspire productivity and leave an impact.</p>
                             </div>
                         </div>
                         <!-- About Card-2 -->
@@ -210,7 +220,8 @@
                             <div>
                                 <h5 class="text-base md:text-lg lg:text-xl text-third-text font-extrabold">Residential
                                 </h5>
-                                <p class="text-base text-secondary-text font-medium">Crafting warm, inviting residential spaces tailored to your unique lifestyle.</p>
+                                <p class="text-base text-secondary-text font-medium">Crafting warm, inviting residential
+                                    spaces tailored to your unique lifestyle.</p>
                             </div>
                         </div>
                     </div>
@@ -257,35 +268,180 @@
                     </svg>
                     How we works</a>
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">Our Works Process</h2>
-                <p class="text-base text-third-text font-medium">Our process ensures every project moves seamlessly from concept to completion, focusing on precision, creativity, and client satisfaction.</p>
+                <p class="text-base text-third-text font-medium">Our process ensures every project moves seamlessly from
+                    concept to completion, focusing on precision, creativity, and client satisfaction.</p>
             </div>
             <!-- Work Grid Card Container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-center items-center mt-6">
                 <div class="p-6 rounded-2xl space-y-3 bg-[#E7C1D3]"> <!-- Work Card-1 -->
                     <img class="w-12" src="./assets/concept.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Concept</h5>
-                    <p class="text-base text-third-text font-medium">Crafting initial ideas that capture the vision and project scope.</p>
+                    <p class="text-base text-third-text font-medium">Crafting initial ideas that capture the vision and
+                        project scope.</p>
                 </div>
                 <div class="p-6 rounded-2xl space-y-3 bg-[#EFDA6E]"> <!-- Work Card-2 -->
                     <img class="w-12" src="./assets/flow-chart.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Design Process</h5>
-                    <p class="text-base text-third-text font-medium">Transforming concepts into precise plans for practical implementation.</p>
+                    <p class="text-base text-third-text font-medium">Transforming concepts into precise plans for
+                        practical implementation.</p>
                 </div>
                 <div class="p-6 rounded-2xl space-y-3 bg-[#A4DAC3]"> <!-- Work Card-3 -->
                     <img class="w-12" src="./assets/vision.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Supervision</h5>
-                    <p class="text-base text-third-text font-medium">Ensuring quality and precision at each stage of project execution.</p>
+                    <p class="text-base text-third-text font-medium">Ensuring quality and precision at each stage of
+                        project execution.</p>
                 </div>
                 <div class="p-6 rounded-2xl space-y-3 bg-[#77AAEA]"> <!-- Work Card-4 -->
                     <img class="w-12" src="./assets/budget-planning.png" alt="">
                     <h5 class="text-xl font-extrabold text-[#1c1c1c]">Budget Planning</h5>
-                    <p class="text-base text-third-text font-medium">Optimizing resources to align with financial goals and project needs.</p>
+                    <p class="text-base text-third-text font-medium">Optimizing resources to align with financial goals
+                        and project needs.</p>
                 </div>
             </div>
         </section>
+        <!-- Our Services Section -->
+        <section id="services" class="bg-white py-11 md:pt-20 md:pb-4 lg:pt-24 px-3 md:px-8 lg:px-11">
+            <!-- Services Section Text Container -->
+            <div class="text-center space-y-6 mb-8 max-w-[650px] mx-auto">
+                <a
+                    class="inline-flex gap-2 bg-primary-bg bg-opacity-20 text-third-text text-base font-bold py-2 px-4 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                    Our Services</a>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-theme-text">Construction And Renovation
+                    Solutions</h2>
+                <p class="text-base text-third-text font-medium">Offering comprehensive construction and renovation services tailored to enhance the durability, functionality, and beauty of every project.</p>
+            </div>
+            <!-- Services Grid Card Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Services Card-1 -->
+                <div class="bg-header-bg bg-opacity-50 cursor-pointer rounded-lg">
+                    <div class="max-h-[279px] overflow-hidden">
+                        <img class="w-full rounded-t-lg hover:scale-110 transition-all obej" src="./assets/service-1.jpg" alt="">
+                    </div>
+                    <div class="px-6 pt-6 pb-12 text-center">
+                        <h4 class="md:text-xl lg:text-2xl text-third-text font-extrabold mb-2">Building Construction</h4>
+                        <p class="text-base text-secondary-text font-medium mb-6">Complete construction services to build strong, lasting structures efficiently.</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            Read More
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Services Card-2 -->
+                <div class="bg-header-bg bg-opacity-50 cursor-pointer rounded-lg">
+                    <div class="max-h-[279px] overflow-hidden">
+                        <img class="w-full rounded-t-lg hover:scale-110 transition-all obej" src="./assets/service-2.jpg" alt="">
+                    </div>
+                    <div class="px-6 pt-6 pb-12 text-center">
+                        <h4 class="md:text-xl lg:text-2xl text-third-text font-extrabold mb-2">Home Maintenance</h4>
+                        <p class="text-base text-secondary-text font-medium mb-6">Reliable maintenance solutions to keep your home in optimal condition.</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            Read More
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Services Card-3 -->
+                <div class="bg-header-bg bg-opacity-50 cursor-pointer rounded-lg">
+                    <div class="max-h-[279px] overflow-hidden">
+                        <img class="w-full rounded-t-lg hover:scale-110 transition-all obej" src="./assets/service-3.jpg" alt="">
+                    </div>
+                    <div class="px-6 pt-6 pb-12 text-center">
+                        <h4 class="md:text-xl lg:text-2xl text-third-text font-extrabold mb-2">Renovation and Painting</h4>
+                        <p class="text-base text-secondary-text font-medium mb-6">Transforming spaces with expert renovation and flawless painting services.</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            Read More
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Services Card-4 -->
+                <div class="bg-header-bg bg-opacity-50 cursor-pointer rounded-lg">
+                    <div class="max-h-[279px] overflow-hidden">
+                        <img class="w-full rounded-t-lg hover:scale-110 transition-all obej" src="./assets/service-4.jpg" alt="">
+                    </div>
+                    <div class="px-6 pt-6 pb-12 text-center">
+                        <h4 class="md:text-xl lg:text-2xl text-third-text font-extrabold mb-2">Wiring and Installation</h4>
+                        <p class="text-base text-secondary-text font-medium mb-6">Safe, efficient wiring and installation solutions for all project needs.</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            Read More
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Services Card-5 -->
+                <div class="bg-header-bg bg-opacity-50 cursor-pointer rounded-lg">
+                    <div class="max-h-[279px] overflow-hidden">
+                        <img class="w-full rounded-t-lg hover:scale-110 transition-all obej" src="./assets/service-5.jpg" alt="">
+                    </div>
+                    <div class="px-6 pt-6 pb-12 text-center">
+                        <h4 class="md:text-xl lg:text-2xl text-third-text font-extrabold mb-2">Tiling and Flooring</h4>
+                        <p class="text-base text-secondary-text font-medium mb-6">Expert tiling and flooring services to enhance durability and aesthetics.</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            Read More
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Services Card-6 -->
+                <div class="bg-header-bg bg-opacity-50 cursor-pointer rounded-lg">
+                    <div class="max-h-[279px] overflow-hidden">
+                        <img class="w-full rounded-t-lg hover:scale-110 transition-all obej" src="./assets/service-6.jpg" alt="">
+                    </div>
+                    <div class="px-6 pt-6 pb-12 text-center">
+                        <h4 class="md:text-xl lg:text-2xl text-third-text font-extrabold mb-2">Interior Design</h4>
+                        <p class="text-base text-secondary-text font-medium mb-6">Creating stylish, functional interiors that reflect your unique style.</p>
+                        <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
+                            Read More
+                            <span class="bg-primary-bg text-theme-text p-1 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+        </section>
         <!-- Our Latest Portfolio Section -->
-        <section class="bg-white py-11 md:py-20 lg:py-24 px-3 md:px-8 lg:px-11">
+        <section id="portfolio" class="bg-white py-11 md:py-20 lg:py-24 px-3 md:px-8 lg:px-11">
             <!-- Portfolio Section Text Container -->
             <div class="text-center space-y-6 mb-8 max-w-[650px] mx-auto">
                 <a
@@ -297,7 +453,8 @@
                     </svg>
                     Explore our Latest works</a>
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">Our Latest Portfolio</h2>
-                <p class="text-base text-third-text font-medium">Explore our recent projects showcasing innovative, functional, and aesthetically inspiring designs crafted to enhance both style and purpose.</p>
+                <p class="text-base text-third-text font-medium">Explore our recent projects showcasing innovative,
+                    functional, and aesthetically inspiring designs crafted to enhance both style and purpose.</p>
             </div>
             <!-- Portfolio Grid Card Layout -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-6">
@@ -309,7 +466,9 @@
                     <!-- Card Text Contents -->
                     <div>
                         <h5 class="text-xl md:text-2xl text-third-text font-extrabold mb-4">Urban Spaces</h5>
-                        <p class="text-base text-secondary-text font-medium mb-5">Designed to elevate city living, our urban projects blend efficiency with aesthetics, creating vibrant environments for modern lifestyles.</p>
+                        <p class="text-base text-secondary-text font-medium mb-5">Designed to elevate city living, our
+                            urban projects blend efficiency with aesthetics, creating vibrant environments for modern
+                            lifestyles.</p>
                         <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
                             View Details
                             <span class="bg-primary-bg text-theme-text p-1 rounded-full">
@@ -331,13 +490,16 @@
                     <img class="w-full object-cover rounded-2xl" src="./assets/img3.png" alt="">
                 </div>
                 <!-- Portfolio Card- 4 -->
-                <div class="flex flex-col md:flex-row p-6 gap-6 border border-header-bg rounded-2xl md:col-span-2 lg:col-span-4">
+                <div
+                    class="flex flex-col md:flex-row p-6 gap-6 border border-header-bg rounded-2xl md:col-span-2 lg:col-span-4">
                     <!-- Card Image -->
                     <img class="w-full object-cover rounded-2xl" src="./assets/img4.png" alt="">
                     <!-- Card Text Contents -->
                     <div>
                         <h5 class="text-xl md:text-2xl text-third-text font-extrabold mb-4">Nature Homes</h5>
-                        <p class="text-base text-secondary-text font-medium mb-5">Harmonizing with the environment, these homes integrate natural elements to create serene, sustainable, and beautiful living spaces.</p>
+                        <p class="text-base text-secondary-text font-medium mb-5">Harmonizing with the environment,
+                            these homes integrate natural elements to create serene, sustainable, and beautiful living
+                            spaces.</p>
                         <a class="text-base md:text-xl text-theme-text font-extrabold inline-flex items-center gap-x-2">
                             View Details
                             <span class="bg-primary-bg text-theme-text p-1 rounded-full">
@@ -362,7 +524,7 @@
         </section>
 
         <!-- Articles Section -->
-        <section class="py-11 md:py-20 lg:py-24 px-3 md:px-8 lg:px-11">
+        <section id="blog" class="py-11 md:py-20 lg:py-24 px-3 md:px-8 lg:px-11">
             <!-- Articles Section Text Container -->
             <div class="text-center space-y-6 mb-8 max-w-[650px] mx-auto">
                 <a
@@ -374,7 +536,8 @@
                     </svg>
                     Rinterio News</a>
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">Read Our Articles and News</h2>
-                <p class="text-base text-third-text font-medium">Stay updated with our latest insights, trends, and architectural innovations. Explore articles that inspire and keep you informed.</p>
+                <p class="text-base text-third-text font-medium">Stay updated with our latest insights, trends, and
+                    architectural innovations. Explore articles that inspire and keep you informed.</p>
             </div>
             <!-- Articles Grid Card Container -->
             <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-6">
@@ -418,8 +581,10 @@
                                 By Abdullah
                             </a>
                         </div>
-                        <h4 class="text-xl text-third-text font-extrabold">Sustainable Design Trends for Modern Architecture</h4>
-                        <p class="text-base text-secondary-text font-medium mb-1">Discover how eco-friendly designs shape the future of urban architecture...</p>
+                        <h4 class="text-xl text-third-text font-extrabold">Sustainable Design Trends for Modern
+                            Architecture</h4>
+                        <p class="text-base text-secondary-text font-medium mb-1">Discover how eco-friendly designs
+                            shape the future of urban architecture...</p>
                         <a class="text-base md:text-lg text-theme-text font-extrabold inline-flex items-center gap-x-2">
                             View Details
                             <span class="bg-primary-bg text-theme-text p-1 rounded-full">
@@ -473,7 +638,8 @@
                             </a>
                         </div>
                         <h4 class="text-xl text-third-text font-extrabold">Key Elements for Timeless Home Interiors</h4>
-                        <p class="text-base text-secondary-text font-medium mb-1">Explore design choices that bring elegance and lasting appeal to interiors.</p>
+                        <p class="text-base text-secondary-text font-medium mb-1">Explore design choices that bring
+                            elegance and lasting appeal to interiors.</p>
                         <a class="text-base md:text-lg text-theme-text font-extrabold inline-flex items-center gap-x-2">
                             View Details
                             <span class="bg-primary-bg text-theme-text p-1 rounded-full">
@@ -526,8 +692,10 @@
                                 By Fahad
                             </a>
                         </div>
-                        <h4 class="text-xl text-third-text font-extrabold">Maximizing Small Spaces with Creative Design</h4>
-                        <p class="text-base text-secondary-text font-medium mb-1">Learn how to make compact areas feel spacious, functional, and stylish.</p>
+                        <h4 class="text-xl text-third-text font-extrabold">Maximizing Small Spaces with Creative Design
+                        </h4>
+                        <p class="text-base text-secondary-text font-medium mb-1">Learn how to make compact areas feel
+                            spacious, functional, and stylish.</p>
                         <a class="text-base md:text-lg text-theme-text font-extrabold inline-flex items-center gap-x-2">
                             View Details
                             <span class="bg-primary-bg text-theme-text p-1 rounded-full">
@@ -544,7 +712,8 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="bg-footer-pattern bg-no-repeat bg-cover py-11 md:py-20 lg:py-24 px-3 md:px-8 lg:px-11 border-4 lg:border-8 border-white">
+        <section id="contact"
+            class="bg-footer-pattern bg-no-repeat bg-cover py-11 md:py-20 lg:py-24 px-3 md:px-8 lg:px-11 border-4 lg:border-8 border-white">
             <!-- Contact Form Text Container -->
             <div class="text-center space-y-6 mb-8 max-w-[650px] mx-auto">
                 <a
@@ -556,7 +725,8 @@
                     </svg>
                     Let’s Connect</a>
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-text">Let’s Discuss Next Project</h2>
-                <p class="text-base text-third-text font-medium">Ready to bring your vision to life? Connect with us to explore ideas, share your needs, and create a design plan tailored for your next project.</p>
+                <p class="text-base text-third-text font-medium">Ready to bring your vision to life? Connect with us to
+                    explore ideas, share your needs, and create a design plan tailored for your next project.</p>
             </div>
             <!-- Form Grid Container -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[970px] mx-auto">
@@ -601,7 +771,8 @@
     <footer class="bg-[#1c1c1c] py-20 px-3 md:px-8 lg:px-11 text-center">
         <!-- Footer Text Contents -->
         <div class=" space-y-4 max-w-[650px] mx-auto">
-            <a class=" inline-flex items-center gap-2 text-2xl lg:text-3xl text-theme-text font-extrabold cursor-pointer">
+            <a
+                class=" inline-flex items-center gap-2 text-2xl lg:text-3xl text-theme-text font-extrabold cursor-pointer">
                 <!-- Logo Icon -->
                 <span class="text-base bg-primary-bg p-2 rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -612,17 +783,25 @@
                 </span>
                 <h1 class="text-header-bg">Rinterio</h1>
             </a>
-            <p class="text-base text-secondary-text font-medium"><strong>Rinterio</strong> delivers innovative architecture solutions, blending aesthetics with functionality to create timeless spaces for modern living and work.</p>
+            <p class="text-base text-secondary-text font-medium"><strong>Rinterio</strong> delivers innovative
+                architecture solutions, blending aesthetics with functionality to create timeless spaces for modern
+                living and work.</p>
         </div>
         <!-- Footer Menu -->
-        <ul class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[970px] mx-auto my-12 px-5 md:px-10">
-            <li><a class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Home</a></li>
-            <li><a class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Services</a>
+        <ul
+            class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[970px] mx-auto my-12 px-5 md:px-10">
+            <li><a href="#home"
+                    class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Home</a></li>
+            <li><a href="#services"
+                    class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Services</a>
             </li>
-            <li><a class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Portfolio</a>
+            <li><a href="#portfolio"
+                    class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Portfolio</a>
             </li>
-            <li><a class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Blogs</a></li>
-            <li><a class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Contact Us</a>
+            <li><a href="#blog"
+                    class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Blogs</a></li>
+            <li><a href="#contact"
+                    class="text-base text-header-bg font-medium hover:text-primary-bg cursor-pointer">Contact Us</a>
             </li>
         </ul>
         <!-- Footer Button -->
